@@ -9,11 +9,13 @@ function Navbar() {
     return (
         <BNavbar collapseOnSelect expand="lg" bg="dark" variant="dark">
             <Container>
-                <BNavbar.Brand href="#home">Mercado</BNavbar.Brand>
+                <NavLink to="/" className="nav-link">
+                    <BNavbar.Brand >Mercado</BNavbar.Brand>
+                </NavLink>
                 <BNavbar.Toggle aria-controls="responsive-navbar-nav" />
                 <BNavbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">
-                        
+
                     </Nav>
                     <Nav>
                         <NavLink to="/login" className="nav-link">Login</NavLink>
